@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,35 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-  
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-     <div class="grid h-90 gap-4 m-10
-  [grid-template-areas:'left_right1''left_right2''left_right3']
-  [grid-template-columns:1fr_1fr]
-  [grid-template-rows:1fr_1fr_1fr]">
-
-  <!-- Left Big Box -->
-   
-
-  <!-- Right Top Box -->
-  <div class="bg-blue-400 flex items-center justify-center [grid-area:right1]">
-    Right Top
+<body class="m-5">
+   <div class="text-gray-500 flex items-center justify-between cursor-pointer">
+        <input type="text" placeholder="search cosmetics,apparel,accesories..." class="h-12 w-170 px-6 rounded-md shadow-[inset_0_4px_10px_rgba(0,0,0,0.25)] mt-4">
+        <ul class="flex gap-10 text-[18px] text-black" >
+            <li>Categories</li>
+            <li>Wishlist</li>
+            <li>ViewCard</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" 
+fill="none" viewBox="0 0 24 24" stroke-width="2"
+stroke="currentColor" 
+class="w-6 h-6 text-gray-400">
+  <path stroke-linecap="round" stroke-linejoin="round" 
+  d="M14.25 18.75a2.25 2.25 0 0 1-4.5 0m9-5.25V11a6.75 6.75 0 1 0-13.5 0v2.5l-1.5 1.5h16.5l-1.5-1.5Z" />
+</svg>
+</li>
+<li>More</li>
+        </ul>
+        <div class="h-12 w-40 bg-gray-500 text-white flex justify-around items-center rounded-md font-bold ">
+            <p class="hover:text-blue-600 cursor-pointer">Sign Up</p>
+            <p>|</p>
+            <p class="hover:text-blue-600 cursor-pointer">Login</p>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap">
+    <div class="h-140 w-220 overflow-hidden rounded-xl">
+  <div class=" h-full w-full bg-[url('./far.webp')] bg-contain bg-cover hover:scale-120  transition-tranform duration-900 rounded-xl relative ">
+   <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+   <div class="absolute bottom-10 left-20">
+      <h1 class="text-4xl text-white z-10">Indulge in Elegance!</h1>
+      <button class="bg-white text-2xl text-black h-16 w-40 font-bold rounded-md mt-5 z-10">Shop Now</button>
+   </div>
   </div>
-
-  <!-- Right Bottom Box -->
-  <div class="bg-green-400 flex items-center justify-center [grid-area:right2]">
-    Right Bottom
   </div>
- <div class="bg-blue-900 flex items-center justify-center [grid-area:right3]" >
-    Farhan
- </div>
-
+  <div>
+  <div class="h-67 w-115  overflow-hidden rounded-xl m-2 ">
+  <div class="h-full w-full bg-center bg-[url('./hero-2.webp')] hover:scale-120 rounded-xl bg-contain bg-cover  bg-center  transition-tranform duration-900  relative">
+    <div class="h-10 w-40  bg-white/80 inset-0  rounded-md absolute top-10 left-20 flex items-center justify-center">
+      <h1 class="font-bold">Matte Finish</h1>
+    </div>
+  </div>
+  </div>
+   <div class="h-70 w-115 overflow-hidden rounded-xl m-2">
+  <div class="h-full w-full bg-[url('./hero-3.webp')] hover:scale-120 rounded-xl bg-contain bg-cover bg-center  transition-tranform duration-900 relative ">
+   <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+    <div class="absolute  bottom-10 left-10">
+      <h1 class="text-2xl text-white font-bold ">The Coastal Look</h1>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="m-5">
+    <h2 class="text-6xl font-mono">Featured Vendors</h2>
+    <p class="text-3xl">Discover trusted premium sellers from Pakistan and beyond.</p>
+    <div class="flex items-center justify-between flex-wrap">
+    <div class="h-130 w-80 rounded-xl mt-5 shadow-md shadow-t-black/100 overflow-hidden hover:-translate-y-3 transition-all relative">
+      <div class="h-8 w-24 rounded-full bg-yellow-300 flex items-center justify-center absolute top-5 right-3 z-90">
+         <h1 class="text-black font-bold">Verified</h1>
+      </div>
+       <img src="image.png" alt="" class="rounded-t-xl h-75 w-full hover:scale-105 transition-tranform duration-900">
+       <h4 class="font-bold text-2xl ml-4 mt-4">Lumière Paris</h4>
+       <p class="font-mono ml-4"> Luxury Skincare & Cosmetics</p>
+       <span class="text-1xl text-gray-500 ml-4 font-mono">Paris, France</span>
+       <div class="h-[1px] w-70  border-black bg-gray-400 mx-auto mt-5"></div>
+       <div class="flex items-center justify-around mt-5">
+       <h3 class="text-gray-500">4.9</h3>
+       <p>156 product</p>
+       </div>
+       <button class="bg-black text-white font-bold mt-2 font-mono h-10 w-70 rounded-md ml-5">Visit Store</button>
+    </div>
+    <div class="h-130 w-80 rounded-xl mt-5 shadow-md shadow-t-black/100 overflow-hidden hover:-translate-y-3 transition-all relative ">
+      <div class="h-8 w-24 rounded-full bg-yellow-300 flex items-center justify-center absolute top-5 right-3 z-90">
+         <h1 class="text-black font-bold">Verified</h1>
+      </div>
+       <img src="sajid.png" alt="" class="rounded-t-xl h-75 w-full hover:scale-105 transition-tranform duration-900">
+       <h4 class="font-bold text-2xl ml-4 mt-4">Lumière Paris</h4>
+       <p class="font-mono ml-4"> Luxury Skincare & Cosmetics</p>
+       <span class="text-1xl text-gray-500 ml-4 font-mono">Paris, France</span>
+       <div class="h-[1px] w-70  border-black bg-gray-400 mx-auto mt-5"></div>
+       <div class="flex items-center justify-around mt-5">
+       <h3 class="text-gray-500">4.9</h3>
+       <p>156 product</p>
+       </div>
+       <button class="bg-black text-white font-bold mt-2 font-mono h-10 w-70 rounded-md ml-5">Visit Store</button>
+    </div>
+    <div class="h-130 w-80 rounded-xl mt-5 shadow-md shadow-t-black/100 overflow-hidden hover:-translate-y-3 transition-all relative">
+      <div class="h-8 w-24 rounded-full bg-yellow-300 flex items-center justify-center absolute top-5 right-3 z-90">
+         <h1 class="text-black font-bold">Verified</h1>
+      </div>
+       <img src="sajid.png" alt="" class="rounded-t-xl h-75 w-full hover:scale-105 transition-tranform duration-900">
+       <h4 class="font-bold text-2xl ml-4 mt-4">Lumière Paris</h4>
+       <p class="font-mono ml-4"> Luxury Skincare & Cosmetics</p>
+       <span class="text-1xl text-gray-500 ml-4 font-mono">Paris, France</span>
+       <div class="h-[1px] w-70  border-black bg-gray-400 mx-auto mt-5"></div>
+       <div class="flex items-center justify-around mt-5">
+       <h3 class="text-gray-500">4.9</h3>
+       <p>156 product</p>
+       </div>
+       <button class="bg-black text-white font-bold mt-2 font-mono h-10 w-70 rounded-md ml-5">Visit Store</button>
+    </div>
+    <div class="h-130 w-80 rounded-xl mt-5 shadow-md shadow-t-black/100 overflow-hidden hover:-translate-y-2 transition-all relative">
+      <div class="bg-yellow-300 h-8 w-24 rounded-full flex items-center justify-center absolute z-90 top-5 right-3">
+         <h1 class="font-bold">Verified</h1>
+       </div>
+       <img src="sajid.png" alt="" class="rounded-t-xl h-75 w-full hover:scale-105 transition-tranform duration-900">
+       <h4 class="font-bold text-2xl ml-4 mt-4">Lumière Paris</h4>
+       <p class="font-mono ml-4"> Luxury Skincare & Cosmetics</p>
+       <span class="text-1xl text-gray-500 ml-4 font-mono">Paris, France</span>
+       <div class="h-[1px] w-70  border-black bg-gray-400 mx-auto mt-5"></div>
+       <div class="flex items-center justify-around mt-5">
+       <h3 class="text-gray-500">4.9</h3>
+       <p>156 product</p>
+       </div>
+       <button class="bg-black text-white font-bold mt-2 font-mono h-10 w-70 rounded-md ml-5">Visit Store</button>
+    </div>
+    </div>
+  </div>
+   <div>
+      <h1 class="text-7xl flex items-center justify-center m-5 font-bold ">Shop By Category</h1>
+      <p class="flex items-center justify-center text-3xl text-gray-600">Explore our selected collections from premium local and global brands.</p>
+   </div>
+   <div class="flex items-center justify-between flex-wrap">
+<div class="h-110  rounded-xl w-65 mt-4 bg-black overflow-hidden">
+   <div class="h-full w-full bg-[url('./short_logo.webp')] bg-contain bg-center bg-cover relative rounded-xl hover:scale-120 transition-all duration-200">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute bottom-15 left-7 ">
+  <h1 class="text-white text-3xl font-bold ml-2">Cosmetics</h1>
+  <p class=" mt-5 text-white ">Premium makeup & beauty essential</p>
+  <h4 class="text-white">1250+ Products</h4>
+  </div>
+   </div>
+</div>
+<div class="h-110  rounded-xl w-65 mt-4 bg-black overflow-hidden">
+   <div class="h-full w-full bg-[url('./short_logo.webp')] bg-contain bg-center bg-cover relative rounded-xl hover:scale-120 transition-all duration-200">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute bottom-15 left-7 ">
+  <h1 class="text-white text-3xl font-bold ml-2">Cosmetics</h1>
+  <p class=" mt-5 text-white ">Premium makeup & beauty essential</p>
+  <h4 class="text-white">1250+ Products</h4>
+  </div>
+   </div>
+</div>
+<div class="h-110  rounded-xl w-65 mt-4 bg-black overflow-hidden">
+   <div class="h-full w-full bg-[url('./short_logo.webp')] bg-contain bg-center bg-cover relative rounded-xl hover:scale-120 transition-all duration-200">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute bottom-15 left-7 ">
+  <h1 class="text-white text-3xl font-bold ml-2">Cosmetics</h1>
+  <p class=" mt-5 text-white ">Premium makeup & beauty essential</p>
+  <h4 class="text-white">1250+ Products</h4>
+  </div>
+   </div>
+</div>
+<div class="h-110  rounded-xl w-65 mt-4 bg-black overflow-hidden">
+   <div class="h-full w-full bg-[url('./short_logo.webp')] bg-contain bg-center bg-cover relative rounded-xl hover:scale-120 transition-all duration-200">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute bottom-15 left-7 ">
+  <h1 class="text-white text-3xl font-bold ml-2">Cosmetics</h1>
+  <p class=" mt-5 text-white ">Premium makeup & beauty essential</p>
+  <h4 class="text-white">1250+ Products</h4>
+  </div>
+   </div>
+</div>
+<div class="h-110  rounded-xl w-65 mt-4 bg-black overflow-hidden">
+   <div class="h-full w-full bg-[url('./short_logo.webp')] bg-contain bg-center bg-cover relative rounded-xl hover:scale-120 transition-all duration-200">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute bottom-15 left-7 ">
+  <h1 class="text-white text-3xl font-bold ml-2">Cosmetics</h1>
+  <p class=" mt-5 text-white ">Premium makeup & beauty essential</p>
+  <h4 class="text-white">1250+ Products</h4>
+  </div>
+   </div>
+</div>
 </div>
 
-  
-
+   
 </body>
 </html>
